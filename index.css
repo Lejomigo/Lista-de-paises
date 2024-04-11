@@ -1,0 +1,100 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: black;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+}
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Asegura que esté encima de otros elementos */
+}
+  
+.loader-text {
+    font-size: 24px;
+  }
+#nav-bar {
+    display: flex; /* Agregado */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#search {
+    background-color: white;
+    color: black;
+    width: 80%;
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+
+.bandera {
+    width: 120px;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+}
+
+#bandera {
+    width: 120px;
+    height: 80px;
+}
+
+.pais {
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pais>h3{
+    margin: 0;
+}
+
+#countries {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    justify-content:center; /* Distribuye los elementos uniformemente en el contenedor */
+    align-items: flex-start;
+
+}
+#pais-indi{
+    max-width: 3 rem;
+}
+.escondidos {
+    display: none;
+}
+
+.mostrados {
+    display: flex;
+}
+
+.paises {
+    flex-direction: row;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
